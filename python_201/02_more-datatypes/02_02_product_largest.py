@@ -7,4 +7,16 @@
 
 from resources import randlist
 
-print(randlist)
+user_input = randlist
+randlist.sort()
+print(
+    randlist[-1]
+)
+
+# Other Approach
+biggest_number = 0
+for el in randlist:
+    if type(el) == int or type(el) == float:
+        if el > biggest_number:
+            biggest_number = el
+print(biggest_number)

@@ -2,7 +2,7 @@
 # office supply item of each person in the given dictionary,
 # formatted like so:
 #
-# LASTNAME, Name           Office supply item
+# LASTNAME, Nameaaaaaa     Office supply item
 # LONGERLASTNAME, Name     Office supply item
 
 office = [
@@ -22,3 +22,12 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+
+for person in office:
+    last_name = person["full_name"].split()[-1]
+    first_name = ""
+    for name in person["full_name"].split()[:-1]:
+        first_name += " " + name
+    name = last_name + ", " + first_name
+    print(f"{name:<30} {person['item']:<10}")
+    

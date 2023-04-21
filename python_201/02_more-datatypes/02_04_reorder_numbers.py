@@ -6,3 +6,14 @@
 #
 # Example input:  1,2,3,4,5,6,7,8,9,10
 # Example output: 2,4,6,8,10,9,7,5,3,1
+
+# Fake user List
+import random
+user_input = []
+for i in range(10):
+    user_input.append(random.randint(3,10000))
+
+for el in user_input[1::2] + user_input[-2::-2]:
+    print(el, end="")
+
+ 

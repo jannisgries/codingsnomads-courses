@@ -4,3 +4,9 @@
 # 2. Use a loop and a second list to solve it more manually
 
 list_ = [1, 2, 3, 4, 3, 4, 5]
+second_list = list(set(list_))
+third_list = []
+for el in list_:
+    if el not in third_list:
+        third_list.append(el)
+print(second_list, third_list)

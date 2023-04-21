@@ -12,8 +12,17 @@
 # Note: This lab might be challenging! Make sure to discuss it 
 # with your mentor or chat about it on our forum.
 
-from resources import randlist
-
-print(randlist)
-
 # Write your code below here
+from resources import randlist
+sorted_list = randlist
+sorted_list.sort()
+counter = 0
+list_of_tuples = []
+for el in sorted_list:
+    if counter % 2 == 0 and counter + 1 < len(sorted_list):
+        tuple_ = tuple([sorted_list[counter], sorted_list[counter + 1]])
+        list_of_tuples.append(tuple_)
+    counter += 1
+print(sorted_list)
+print(list_of_tuples)
+

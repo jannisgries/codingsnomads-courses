@@ -4,4 +4,10 @@
 # - Change the `c` character in your list into a `k`
 # - Convert the list back into a tuple.
 
-string = "codingnomads"
+string_ = "codingnomads"
+tuple_ = tuple(string_)
+list_ = list(tuple_)
+list_.remove("c")
+list_.insert(0, "k")
+tuple_ = tuple(list_)
+print(tuple_)
