@@ -33,7 +33,8 @@ if path_to_counting_file.exists() == False:
             countwriter = csv.writer(csvfile)
             countwriter.writerow(headers)
             countwriter.writerow(data)
-else: 
+else:
+    new_headers = False
     with open(path_to_counting_file, "r") as csvfile:
         existing_headers = []
         str_headers = csvfile.readline()
