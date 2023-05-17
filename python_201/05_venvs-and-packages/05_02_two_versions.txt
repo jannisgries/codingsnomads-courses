@@ -4,3 +4,9 @@ Create two separate virtual environments in two different folders.
   Then deactivate the first virtual environment.
 - Repeat the process with your second venv, but install Django 2.2 instead.
 - Compare the two `requirements.txt` files and post their content below.
+
+Django==1.8
+
+Django==2.2
+pytz==2023.3
+sqlparse==0.4.4

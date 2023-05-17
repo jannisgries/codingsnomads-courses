@@ -9,13 +9,11 @@ def my_enumerate_fun(iterable, number: float = 0) -> list:  # add your arguments
             number += 1
       return list
 
-def my_enumerate_gen(iterable, number: float = 0) -> list:  # add your arguments
+def my_enumerate_gen(iterable, number: float = 0):  # add your arguments
       for el in iterable:
           yield(number, el)
           number += 1
            
-
-
 courses = ['Intro', 'Intermediate', 'Advanced', 'Professional']
 for index, course in my_enumerate_gen(courses):
     print(f"{index}: {course} Python")

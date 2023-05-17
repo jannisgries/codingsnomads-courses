@@ -5,10 +5,16 @@
 # {0: [0], 1: [1], 2: [2], 3: [3], ...,
 # 10: [1, 0], 11: [1, 1], 12: [1, 2], ...,
 # 999: [9, 9, 9]}
-#
+int_dict = {x: [i for i in str(x)] for x in range(0, 1000)}
+print(int_dict)
+
 # CHALLENGE: Write another dictionary comprehension that works the same
 # but for base 2 (binary)! The output values should be:
 #
 # {0: [0, 0, 0], 1: [0, 0, 1], 2: [0, 1, 0], 3: [0, 1, 1], ...,
 # 7: [1, 1, 1], 8: [1, 0, 0, 0], 9: [1, 0, 0, 1], ...,
 # 999: [1, 1, 1, 1, 1, 0, 0, 1, 1, 1]}
+
+int_dict = {x: [i for i in f"{x:b}"] for x in range(0, 1000)}
+print(int_dict)
+

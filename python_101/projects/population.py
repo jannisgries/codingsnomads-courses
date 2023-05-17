@@ -3,7 +3,6 @@
 # One person is born every 6 seconds
 # One person dies every 12 seconds
 # One person immigrates every 40 seconds
-
 current_population = 380123456
 year_in_seconds = 60 * 60 * 24 * 365
 print(year_in_seconds/40)
