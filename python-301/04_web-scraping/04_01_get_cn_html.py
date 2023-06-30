@@ -3,3 +3,6 @@
 #
 # If you run into encoding/decoding errors, you're experiencing something
 # very common. head over to StackOverflow and find a solution!
+import requests
+resp = requests.get('https://codingnomads.co').text
+print(resp)

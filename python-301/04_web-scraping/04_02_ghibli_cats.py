@@ -6,4 +6,12 @@
 # Your task is to use the API to find information about all the cats that
 # appear in Studio Ghibli films.
 
-BASE_URL = "https://ghibliapi.herokuapp.com/"
+import requests
+from pprint import pprint
+api_url = 'https://ghibliapi-iansedano.vercel.app/api/species'
+resp = requests.get(api_url).json()['data']['species']
+people = []
+for species in resp:
+    if species['name'] == "Cat":
+        people = species['people']
+pprint(people)
